@@ -1,0 +1,71 @@
+* {
+  font-family: "Azeret Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer__block {
+  width: 140px;
+  border-right: 10px;
+  border-left: 10px;
+}
+.timer__block .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa600;
+  height: 125px;
+  color: white;
+  font-size: 90px;
+}
+.timer .title {
+  background-color: rgb(255, 102, 31);
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.buttons .button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+  width: 180px;
+  transition: 0.3s ease-in-out;
+}
+.buttons .button.start:hover, .buttons .button.stop:hover, .buttons .button.pause:hover {
+  background-color: #ffa600;
+  color: white;
+}
+.buttons .button.start:hover.pause:hover, .buttons .button.stop:hover.pause:hover, .buttons .button.pause:hover.pause:hover {
+  background-color: rgb(195, 248, 116);
+  color: white;
+}
+
+.result {
+  position: relative;
+  right: 150px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="style.scss" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="timer">
+        <div class="timer__block">
+            <div class="time hour">00</div>
+            <div class="title">Hours</div>
+        </div>
+        <div class="timer__block">
+            <div class="time minute">00</div>
+            <div class="title">Minutes</div>
+        </div>
+        <div class="timer__block">
+            <div class="time second">00</div>
+            <div class="title">Seconds</div>
+        </div>
+        <div class="timer__block">
+            <div class="time millisecond">00</div>
+            <div class="title">Milliseconds</div>
+        </div>
+    </div>
+
+    <div class="buttons">
+    <button class="button start">Start</button>
+    <button class="button pause">Pause</button>
+    <button class="button stop">Stop</button>
+    <button class="button lap">Lap</button>
+    </div>
+   
+    <div class="results__block">
+        <div class="result">
+        Your results:
+        <ul class="results list">
+            
+        </ul>
+        </div>
+    </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
